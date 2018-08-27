@@ -7,67 +7,150 @@
 <!--<![endif]-->
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Horfin</title>
-  <meta name="keywords" content="development, innovation, software, design, technology, mobile, platform, application, investment">
-  <meta name="description" content="Find innovative solutions for your company. Don't waste time, get Horfin.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <style>
-   *{font-family:Montserrat,Helvetica,Arial,sans-serif;outline:none;box-sizing:border-box;-webkit-transition:all .25s ease-out;transition:all .25s ease-out;-webkit-transition-property:background,border,color,width,height,max-width,max-height,opacity,-webkit-transform;transition-property:background,border,color,width,height,max-width,max-height,opacity,-webkit-transform;transition-property:background,border,color,width,height,max-width,max-height,transform,opacity;transition-property:background,border,color,width,height,max-width,max-height,transform,opacity,-webkit-transform}
-  .logo{text-align:center; top:35%;left:0;right:0;position:absolute}
-  .logo img{width: 100%; max-width: 500px;}
-  .footer{position:absolute;bottom:44px;font-size:18px;left:0;right:0;text-align:center}
-  .text-align-center{text-align:center}
-  html,body{min-height:100%;font-size:16px;background:#222;color:#eee}
-  a,a:hover,a:active,a:visited{color:#9f9}
-  .video-background{background:#000;position:absolute;top:0;right:0;bottom:0;left:0;z-index:-99;overflow:hidden;height:100vh}
-  .video-background ._pattern-overlay{position:absolute;top:0;width:100%;opacity:1;bottom:0;background:url(./overlay.png);z-index:1000}
-  .video-background ._pattern-overlay-image{position:absolute;pointer-events:none;opacity:1;z-index:100;top:0;bottom:0;left:0;right:0;
-    background: url(./bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  }
-  .video-background ._youtube-iframe{position:absolute;pointer-events:none;width:125%;height:125%;top:-10%;bottom:0;left:-13%;right:0}
-  </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Horfin</title>
+    <meta name="keywords" content="development, innovation, software, design, technology, mobile, platform, application, investment">
+    <meta name="description" content="Find innovative solutions for your company. Don't waste time, get Horfin.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <style>
+        * {
+            font-family: Montserrat, Helvetica, Arial, sans-serif;
+            outline: none;
+            box-sizing: border-box;
+            -webkit-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+            -webkit-transition-property: background, border, color, width, height, max-width, max-height, opacity, -webkit-transform;
+            transition-property: background, border, color, width, height, max-width, max-height, opacity, -webkit-transform;
+            transition-property: background, border, color, width, height, max-width, max-height, transform, opacity;
+            transition-property: background, border, color, width, height, max-width, max-height, transform, opacity, -webkit-transform
+        }
+        
+        .logo {
+            text-align: center;
+            top: 25%;
+            left: 0;
+            right: 0;
+            position: absolute
+        }
+        
+        .logo img {
+            width: 100%;
+            max-width: 768px;
+        }
+        
+        .footer {
+            position: absolute;
+            bottom: 44px;
+            font-size: 18px;
+            left: 0;
+            right: 0;
+            text-align: center
+        }
+        
+        .text-align-center {
+            text-align: center
+        }
+        
+        html,
+        body {
+            min-height: 100%;
+            font-size: 16px;
+            background: #222;
+            color: #eee
+        }
+        
+        a,
+        a:hover,
+        a:active,
+        a:visited {
+            color: #9f9
+        }
+        
+        .video-background {
+            background: #000;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -99;
+            overflow: hidden;
+            height: 100vh
+        }
+        
+        .video-background ._pattern-overlay {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            opacity: 0.1;
+            bottom: 0;
+            background: url(./overlay.png);
+            z-index: 1000
+        }
+        
+        .video-background ._pattern-overlay-image {
+            position: absolute;
+            pointer-events: none;
+            opacity: 1;
+            z-index: 100;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(./bg.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        .video-background ._youtube-iframe {
+            position: absolute;
+            pointer-events: none;
+            width: 125%;
+            height: 125%;
+            top: -10%;
+            bottom: 0;
+            left: -13%;
+            right: 0
+        }
+    </style>
 </head>
 
 <body>
-  <div class="video-background">
-    <div class="_pattern-overlay"></div>
-    <div class="_pattern-overlay-image"></div>
-    <iframe id="_youtube-iframe" class="_youtube-iframe" src="https://www.youtube.com/embed/XFZLZyF7NPQ?autoplay=1&loop=1&rel=0&controls=0&showinfo=0&start=0&mute=1"
-      frameborder="0" allowfullscreen></iframe>
-  </div>
-
-  <div id="vidtop-content">
-    <div class="vid-info">
-      <div class="logo">
-        <img src="logo.png" alt="">
-      </div>
-      <div class="footer content text-align-center">
-        <p>
-          <h2>Find innovative solutions for your company. Don't waste time, get Horfin.</h2>
-        </p>
-        <p>We're under construction.
-          <span class="line-break"> </span>Please check back for an update soon.</p>
-      </div>
+    <div class="video-background">
+        <div class="_pattern-overlay"></div>
+        <div class="_pattern-overlay-image"></div>
+        <iframe id="_youtube-iframe" class="_youtube-iframe" src="https://www.youtube.com/embed/2pmgu6Yfbb8?autoplay=1&loop=1&rel=0&controls=0&showinfo=0&start=20&mute=1" frameborder="0" allowfullscreen></iframe>
     </div>
-  </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-    jQuery(function ($) {
-       $('._pattern-overlay-image').delay(1500).fadeOut(500);
-       setInterval(function(){ 
-        var iframe = document.getElementById("_youtube-iframe");
-        iframe.src = iframe.src;
-       }, 57000);
-    });
-  </script>
+    <div id="vidtop-content">
+        <div class="vid-info">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="footer content text-align-center">
+                <p>
+                    <h2>Find innovative solutions for your company. Don't waste time, get Horfin.</h2>
+                </p>
+                <p>We're under construction.
+                    <span class="line-break"> </span>Please check back for an update soon.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        jQuery(function($) {
+            $('._pattern-overlay-image').delay(1500).fadeOut(500);
+            setInterval(function() {
+                var iframe = document.getElementById("_youtube-iframe");
+                iframe.src = iframe.src;
+            }, 57000);
+        });
+    </script>
 </body>
 
 </html>
